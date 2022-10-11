@@ -3,24 +3,27 @@ let lastInputDirection = { x: 0, y: 0 }
 
 window.addEventListener('keydown', e => {
   switch (e.key) {
-    case 'ArrowUp':
+    case 'w':
       // the if statements prevent the snake from being able to move back in the direction it was previously going.
       if (lastInputDirection.y !== 0) break
+      console.log(inputDirection)
       inputDirection = { x: 0, y: -1 }
       break
-    case 'ArrowDown':
+    case 's':
       if (lastInputDirection.y !== 0) break
+      console.log(inputDirection)
       inputDirection = { x: 0, y: 1 }
       break
-    case 'ArrowLeft':
+    case 'a':
       if (lastInputDirection.x !== 0) break
+      console.log(inputDirection)
       inputDirection = { x: -1, y: 0 }
       break
-    case 'ArrowRight':
+    case 'd':
       if (lastInputDirection.x !== 0) break
+      console.log(inputDirection)
       inputDirection = { x: 1, y: 0 }
       break
-
   }
 })
 
