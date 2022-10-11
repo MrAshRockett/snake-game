@@ -6,7 +6,7 @@ const EXPANSION_RATE = 1
 
 export function update() {
   if (onSnake(food)) {
-    console.log("True");
+    // console.log("True");
     addSegments()
 
     expandSnake(EXPANSION_RATE)
